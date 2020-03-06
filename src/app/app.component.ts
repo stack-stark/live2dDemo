@@ -9,7 +9,6 @@ export class AppComponent {
   title = 'live2dDemo';
 
   modelName = 'koharu';
-
   preview(name: string) {
     this.modelName = name;
   }
