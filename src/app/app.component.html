@@ -440,24 +440,22 @@
         imports: [NgLive2dModule]；
 
         -html
-        《lib-ng-live2d [modelNameOrUrl]="" [needToTop]=""》《/lib-ng-live2d》
+        《lib-ng-live2d [modelNameOrUrl]="" [needToTop]="" [positionRight]=""》《/lib-ng-live2d》
       </pre>
     <pre *ngSwitchCase="'pwa'">
-        -modelNameOrUrl string
+        -modelNameOrUrl: string
         模型名,包含以下名字,可不传,默认hijiki
         z16,Epsilon2_1,izumi,koharu,shizuku,miku,hijiki,tororo
         如果传入值没匹配到上面名字则视为传入的为模型url,则加载传入的地址模型
 
-        -needToTop boolean
+        -needToTop: boolean
         是否需要点击回到顶部功能,默认false
 
-        -positionRight boolean
+        -positionRight: boolean
         是否右下角显示,默认true,可不传;false则右下角显示
       </pre>
     <pre *ngSwitchCase="'dependency'">
-      angular的live2D插件
-
-      借鉴于https://github.com/QiShaoXuan/vuepress-plugin-cat.git
+      angular的live2D插件,当前最新版本: 0.0.2
 
       本demo github: https://github.com/stack-stark/live2dDemo
     </pre>
